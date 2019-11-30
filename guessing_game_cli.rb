@@ -1,6 +1,6 @@
 def random
 random_n = rand(6)+1
-random_n.to_s
+random_n
 end
 
 def prompt
