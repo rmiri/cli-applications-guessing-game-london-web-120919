@@ -13,7 +13,7 @@ def run_guessing_game
   user_i = gets.chomp
     if user_i == "exit"
       return "Goodbye!"
-    elsif user_i == random
+    elsif user_i.to_i == random
       print "you won!"
     else
       print "Sorry! The computer guessed #{random}."
