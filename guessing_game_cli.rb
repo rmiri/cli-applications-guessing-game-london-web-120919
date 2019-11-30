@@ -12,11 +12,9 @@ def run_guessing_game
   user_i = gets.chomp.to_i
     if user_i == "exit"
     print "Goodbye!"
-    else
-      if user_i == random
+    elsif user_i == random
         print "you won!"
-      else
+    else
         print "Sorry! The computer guessed #{random}."
-      end
     end
 end
