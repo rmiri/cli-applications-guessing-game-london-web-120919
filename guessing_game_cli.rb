@@ -11,7 +11,7 @@ def run_guessing_game
   prompt
   user_i = gets.chomp.to_i
     if user_i == "exit"
-    print "Bye bye sore loser"
+    print "Goodbye!"
     else
       if user_i == random
         print "you won!"
