@@ -8,13 +8,15 @@ def prompt
 end
 
 def run_guessing_game
-  prompt
-  user_i = gets.chomp.to_i
     if user_i == "exit"
     print "Goodbye!"
-    elsif user_i == random
-        print "you won!"
     else
+      prompt
+      user_i = gets.chomp.to_i
+      if user_i == random
+        print "you won!"
+      else
         print "Sorry! The computer guessed #{random}."
+      end
     end
 end
